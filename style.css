@@ -2,104 +2,129 @@
 body {
     background-color: #F5C16C;
     font-family: 'Arial', sans-serif;
-   
+    margin: 0;
+    padding: 0;
 }
+
+/* Header */
 .header {
     background-color: #D9892C;
     color: black;
-   
     text-align: center;
+    padding: 20px 10px;
 }
+
 .header h1 {
-    font-size: 110px;
+    font-size: 3.5rem;
     font-weight: bold;
-    
 }
 
 .header p {
-    font-size: 20px;
-}
-.content {
-    margin-top: 20px;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 1.2rem;
 }
 
+/* Content */
+.content {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Info Box */
 .info-box {
     background-color: #F5C16C;
     border: 2px solid #D9892C;
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    font-size: 18px;
+    width: 90%;
+    font-size: 1rem;
     text-align: left;
     color: black;
 }
-.types{
+
+/* Types Section */
+.types {
     text-align: center;
     color: brown;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 100px;
+    font-size: 3rem;
+    margin-top: 50px;
 }
-.coffee , .type{
+
+.coffee,
+.type {
     color: brown;
-    font-size: 20px;
+    font-size: 1rem;
+    padding: 0 10px;
 }
-.top{
+
+/* Top Brands */
+.top {
     text-align: center;
     color: brown;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 10px;
+    font-size: 3rem;
+    margin: 10px 0;
 }
-.image{
-    width: 250px;
-    height: 250px;
+
+.image {
+    max-width: 100%;
+    height: auto;
     border-radius: 15px;
-    margin-left: 50px;
+    margin: 10px 0;
 }
-.brand{
-    margin-left: 250px;
+
+.brand {
+    margin: 20px 0;
 }
-.gal,.que{
+
+/* Gallery */
+.gal,
+.que {
     text-align: center;
     color: brown;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
-.img1{
-    transform: scale(0.5s);
+
+.img1 {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    transition: 0.6s;
 }
-.img1:hover{
-    width: 250px;
-    height: 250px;
-    transition: .6s;
-    border-radius: 8px;
+
+.img1:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 20px rgb(0, 0, 0);
 }
-.btn{
+
+/* Buttons */
+.btn {
     background-color: #D9892C;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.btn:hover{
-    background-color: #F5C16C;
 
+.btn:hover {
+    background-color: #F5C16C;
 }
+
+/* Footer */
 .footer {
     background-color: #d49027;
     color: black;
-    position: relative; 
-    z-index: 1; 
+    padding: 20px;
+    text-align: center;
 }
-
 
 .footer h5 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer a {
@@ -112,15 +137,66 @@ body {
 }
 
 .footer img {
+    max-width: 80px;
+    margin: 10px auto;
     display: block;
-    margin: 0 auto;
-}
- .img2{
-    position: fixed;
-    bottom: 2%;
-    margin-left: 40%;
-   
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
 
+    .content {
+        font-size: 1.5rem;
+    }
 
+    .info-box {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .types {
+        font-size: 2.5rem;
+    }
+
+    .top {
+        font-size: 2.5rem;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .gallery .img1 {
+        margin: auto;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        font-size: 1.2rem;
+    }
+
+    .info-box {
+        font-size: 0.8rem;
+    }
+
+    .types, .top {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 0.7rem;
+    }
+}
